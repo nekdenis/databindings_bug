@@ -6,4 +6,4 @@ Multimodule is not working for databinding compiler v2
 
 Explanation diagram:
 
-![diagram](/images/diagram.png)
+![diagram](/images/diagram_v2.png)
