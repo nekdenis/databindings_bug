@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    dataBinding.enabled = true
+
+    defaultConfig {
+        applicationId "com.github.nekdenis.databindingsimple"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation project(':featurelevel1')
+// app is not working until application module does not know about level2
+//    implementation project(':featurelevel2')
+}
