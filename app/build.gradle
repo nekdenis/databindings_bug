@@ -22,7 +22,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation project(':featurelevel1')
 // app is not working until application module does not know about level2
 //    implementation project(':featurelevel2')

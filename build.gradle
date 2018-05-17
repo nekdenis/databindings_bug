@@ -6,7 +6,7 @@ buildscript {
         maven { url 'https://maven.google.com' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.0'
+        classpath 'com.android.tools.build:gradle:3.2.0-alpha14'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -29,7 +29,7 @@ configurations.all {
         eachDependency { details ->
             // Force all of the primary support libraries to use the same version.
             def group = details.requested.group
-            if (group == 'com.android.databinding' && details.requested.module == "compiler") details.useVersion = "3.1.0"
+            if (group == 'com.android.databinding' && details.requested.module == "compiler") details.useVersion = "3.2.0-alpha14"
         }
         failOnVersionConflict()
     }
